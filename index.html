@@ -646,8 +646,11 @@
     <div id="secretBlockReveal" style="display:none;background:linear-gradient(135deg,#f5f3ff,#ede9fe);border:1.5px solid #c4b5fd;border-radius:14px;padding:20px;text-align:center;">
       <div style="font-size:28px;margin-bottom:8px">🔐</div>
       <h3 style="font-size:15px;font-weight:800;color:#7c3aed;margin-bottom:8px">Хотите открыть секретный блок?</h3>
-      <p style="font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:14px">Впереди — <strong style="color:#7c3aed">секретная техника</strong>. Чтобы получить доступ, напишите мне в Telegram и запросите пароль:<br><br>
-      <a href="https://t.me/ihipoo" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#0088cc;color:#fff;font-size:13px;font-weight:700;padding:9px 18px;border-radius:9px;text-decoration:none;">✈️ Написать @ihipoo</a></p>
+      <p style="font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:14px">Впереди — <strong style="color:#7c3aed">секретная техника</strong>. Чтобы получить доступ, напишите мне и запросите пароль:</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
+        <a href="https://t.me/ihipoo" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#0088cc;color:#fff;font-size:13px;font-weight:700;padding:9px 18px;border-radius:9px;text-decoration:none;">✈️ Написать в Telegram</a>
+        <a href="https://max.ru/u/f9LHodD0cOLSeMFQVOm0DUAO3PEVuXXSpLeX2RWYOZMfobtbqisJrog7WvM" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#ff6b00;color:#fff;font-size:13px;font-weight:700;padding:9px 18px;border-radius:9px;text-decoration:none;">🟠 Написать в Max</a>
+      </div>
     </div>
   </div>
   <div class="btn-row">
@@ -750,7 +753,7 @@ const subData = {
       <p style="font-size:13px;color:#1e293b;line-height:1.7;margin-bottom:12px">Не фильтруйте заранее — просто пройдитесь по списку контактов сверху вниз во всех мессенджерах: <strong>WhatsApp, Telegram, Instagram</strong>. Вы никогда не знаете заранее, кто именно откликнется.</p>
       <div style="background:#fff;border-radius:10px;padding:12px 14px;border-left:3px solid #f97316;margin-bottom:12px">
         <div style="font-size:11px;font-weight:800;color:#f97316;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:7px">📋 Готовое сообщение — просто скопируйте:</div>
-        <p style="font-size:13px;color:#1e293b;line-height:1.75;font-style:italic">«Привет! Я сейчас работаю с компанией Мануфактура — они занимаются повышением продаж в компаниях. Есть у тебя кто-то в окружении, кому это может быть интересно?»</p>
+        <p style="font-size:13px;color:#1e293b;line-height:1.75;font-style:italic">«Привет! 👋 Сейчас сотрудничаю с компанией «Мануфактура» — они помогают бизнесу увеличивать продажи и выручку за счёт внедрения CRM-системы. Особенно там, где продукт классный, а вот с продажами пока не очень получается. Не подскажешь, у кого из знакомых есть отдел продаж? Возможно, кому-то будет актуально — сведу с ребятами, обсудите 🙂»</p>
       </div>
       <div style="font-size:12.5px;color:#92400e;line-height:1.7">
         Если у вашего знакомого самого бизнес или он связан с продажами — он <strong>сам откликнется</strong>. Если нет — кому-нибудь посоветует. <strong>Это запустит вашу паутину связей и рекомендаций.</strong>
@@ -837,7 +840,7 @@ const subData = {
     </div>
 
     <div style="background:#fff7ed;border:1.5px solid #fed7aa;border-radius:10px;padding:11px;font-size:12px;line-height:1.65;color:#1e293b">
-      <strong style="color:#f97316">💡 Важно:</strong> я специально не даю готовый шаблон объявления — чтобы все партнёры не размещали одинаковые тексты. Составьте своё, можно через ИИ. Так каждое объявление будет уникальным и будет работать лучше.
+      <strong style="color:#f97316">💡 Важно:</strong> я специально не даю готовый шаблон объявления — чтобы все партнёры не размещали одинаковые тексты. Составьте своё, можно через ИИ. Так каждое объявление будет уникальным и будет работать лучше. Если не хочется заморачиваться — напишите мне, дам готовый шаблон.
     </div>
 
     <div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:1.5px solid #86efac;border-radius:12px;padding:14px;margin-top:12px">
@@ -1131,16 +1134,18 @@ updateProgress();
 
 // ACTION PLAN SLIDESHOW
 const apSlides = [
-  {day:'День 1',emoji:'✈️',time:'~1 час',title:'Тёплый круг в Telegram',color:'#0088cc',bg:'#e8f4fd',border:'#bfdbfe',
-   items:['Открой Telegram и пройдись по всем контактам сверху вниз','Напиши 50 тёплым контактам готовое сообщение','Не жди ответов — просто пиши и двигайся дальше']},
+  {day:'День 1',emoji:'✈️',time:'~1 час',title:'Тёплый круг',color:'#0088cc',bg:'#e8f4fd',border:'#bfdbfe',
+   items:['Открой любой мессенджер — Telegram или MAX — и пройдись по всем контактам сверху вниз','Напиши 50 тёплым контактам готовое сообщение','Не жди ответов — просто пиши и двигайся дальше']},
   {day:'День 2',emoji:'📋',time:'~1,5 часа',title:'Авито + WhatsApp',color:'#16a34a',bg:'#f0fdf4',border:'#bbf7d0',
    items:['Размести 10 объявлений на Авито в крупных городах','Напиши 50 тёплым контактам в WhatsApp — да, он ещё работает, там читают и отвечают','Используй то же самое готовое сообщение']},
   {day:'День 3',emoji:'🎰',time:'~1 час',title:'ВКонтакте + Лотерея',color:'#7c3aed',bg:'#f5f3ff',border:'#ddd6fe',
-   items:['Напиши 50 тёплым контактам во ВКонтакте','Выложи лотерею в сторис — бесплатный аудит системы продаж','Попроси 2–3 знакомых поделиться у себя']},
+   items:['Напиши 50 тёплым контактам во ВКонтакте','Выложи лотерею в сторис — в ВК, Telegram, MAX и WhatsApp — бесплатный аудит системы продаж','Попроси 2–3 знакомых поделиться у себя','Креативы для сторис можно получить у меня по запросу']},
   {day:'День 4',emoji:'🗺️',time:'~30 минут',title:'Авито × 2 + Тематические чаты',color:'#f97316',bg:'#fff7ed',border:'#fed7aa',
-   items:['Создай ещё 10 объявлений на Авито в других городах','Найди тематические чаты в Telegram и ВКонтакте — предприниматели, продажи, бизнес','Посмотри профили участников, выбери подходящих']},
+   items:['Создай ещё 10 объявлений на Авито в других городах','Найди тематические чаты в Telegram и ВКонтакте — предприниматели, продажи, бизнес','Посмотри профили участников, выбери подходящих','После выбора подходящих можно писать им в холодную. Не знаешь, как лучше написать, — задай вопрос в группе, подскажу']},
   {day:'День 5',emoji:'🌐',time:'~20 минут',title:'Нетворкинг',color:'#0891b2',bg:'#ecfeff',border:'#a5f3fc',
    items:['Напиши 15 потенциальным клиентам из тематических чатов','Найди ближайшее бизнес-мероприятие в своём городе и запишись','Ты уже запустил паутину — первые ответы уже идут']},
+  {day:'День 6+',emoji:'🔄',time:'~15 минут/нед.',title:'Поддерживающий ритм',color:'#0ea5e9',bg:'#f0f9ff',border:'#bae6fd',
+   items:['Продолжай писать новым контактам из тематических чатов','Раз в неделю выкладывай сторис с лотереей и проси знакомых поделиться у себя','Так поток клиентов не останавливается']},
   {day:'Итог',emoji:'🕸️',time:'',title:'Ваша паутина работает',isResult:true}
 ];
 let apCurrent = 0;
